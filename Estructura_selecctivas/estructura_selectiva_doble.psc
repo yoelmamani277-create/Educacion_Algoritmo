@@ -17,7 +17,7 @@ Algoritmo Ejercicio-doble
 	gmail="yoelmamani";
 	
 	si cuenta=gmail Entonces
-		escribir "ingrese la contraseña";
+		escribir "puede continuar";
 	SiNo
 		Escribir "no se a podido encontrar tu cuenta de google";
 	FinSi
