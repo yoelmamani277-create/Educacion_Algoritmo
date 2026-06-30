@@ -1,0 +1,43 @@
+Algoritmo sin_titulo
+	definir  precio, cantidad, subtotal, descuento,opcion1,opcion2,opcion3 como real;
+	Definir nombre,hardware, perifericos, insumos, efectivo, tarjeta como caracter;
+	Escribir "por favor ingrese su nombre";
+	leer nombre;
+	Escribir "ingrese el precio del producto";
+	leer precio;
+	Escribir "ingrese la cantidad de productos comprados";
+	leer cantidad;
+	Escribir "elija la categoria del producto";
+	leer hardware;
+	leer insumos;
+	leer perifericos;
+	Escribir "ingrese el metodo de pago";
+	leer efectivo,tarjeta;
+	subtotal= precio*cantidad;
+	si subtotal >= 50000 Entonces
+		descuento=subtotal * 0.15;
+	SiNo
+		descuento= subtotal * 0.5;
+	FinSi
+	si perifericos=perifericos Entonces
+		descuento = subtotal*0.10;
+	FinSi
+	si insumos>=insumos Entonces
+		descuento= subtotal* 0.5;
+	SiNo
+		Escribir "no hay descuento";
+		
+	FinSi
+	si precio= 1 Entonces
+		descuento= subtotal*0.10;
+	FinSi
+	si tarjeta= tarjeta Entonces
+		descuento=subtotal*0.15;
+	FinSi
+	si subtotal <=20000 Entonces
+		subtotal= subtotal+ 2500;
+	FinSi
+	Escribir "Ticket de Compra";
+	Escribir "nombre de usuario: ",nombre;
+	Escribir "total a pagar: ",subtotal;
+FinAlgoritmo
